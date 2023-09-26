@@ -25,19 +25,23 @@ const TaskList: React.FC<TaskListProps> = ({
 
   return (
     <div className="task-list">
-      {tasks.map((task) => (
-        <div key={task.id} className="task-box">
-          <strong className="task-title">{task.title}</strong>
-          <p>{task.description}</p>{" "}
-          <div className="handleIcon">
-            <FaEdit className="edit" onClick={() => handleEditTask(task)} />
-            <FaTrashAlt
-              className="icon"
-              onClick={() => handleDeleteTask(task.id)}
-            />
+      {tasks.length === 0 ? (
+        <p>Aucune tâche créée pour le moment.</p>
+      ) : (
+        tasks.map((task) => (
+          <div key={task.id} className="task-box">
+            <strong className="task-title">{task.title}</strong>
+            <p>{task.description}</p>{" "}
+            <div className="handleIcon">
+              <FaEdit className="edit" onClick={() => handleEditTask(task)} />
+              <FaTrashAlt
+                className="icon"
+                onClick={() => handleDeleteTask(task.id)}
+              />
+            </div>
           </div>
-        </div>
-      ))}
+        ))
+      )}
     </div>
   );
 };

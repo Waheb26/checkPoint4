@@ -16,3 +16,5 @@ const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
 });
+
+module.exports = app;
