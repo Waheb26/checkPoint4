@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  bottom: 3dvh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2dvw;
+  color: #ebf5f5;
+  cursor: pointer;
+}
+
+/*.Faicon:hover {
+  width: 2dvw;
+  height: auto;
+}*/
+
+@media screen and (max-width: 500px) {
+  footer {
+    position: relative;
+    margin-top: 10dvh;
+    margin-bottom: 3dvh;
+    gap: 5dvw;
+  }
+}

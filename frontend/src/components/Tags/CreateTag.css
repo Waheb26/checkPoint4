@@ -1,0 +1,40 @@
+.create-tag {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: 10rem;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.color-input-field {
+  width: 10%;
+  height: 30px;
+  padding: 0;
+}
+
+.button-wrapper {
+  margin-top: 10px;
+}
+
+.create-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #1f8d3e;
+}

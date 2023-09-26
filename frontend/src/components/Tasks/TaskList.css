@@ -1,0 +1,87 @@
+.task-list {
+  list-style-type: none;
+  width: 30%;
+  margin-top: 3rem;
+  margin-left: 3%;
+  padding: 2dvh 3dvw;
+  background-color: rgb(122, 201, 201);
+  border: solid 2px rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.task-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #a4cdce;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-box .task-title {
+  padding: 0.5dvh 0.5dvw;
+  font-size: 1dvw;
+  font-weight: bold;
+  border: white solid 2px;
+  border-radius: 5px;
+  background-color: #daa83c;
+}
+
+.task-box .edit {
+  width: 5dvw;
+  margin-left: 25dvw;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.task-box .icon {
+  margin-left: 27dvw;
+  margin-top: 2dvh;
+  cursor: pointer;
+  color: #a23c25;
+}
+
+.task-box p {
+  font-size: 0.9dvw;
+  color: #333;
+}
+
+/*//////////  MOBILE /////////*/
+
+@media screen and (max-width: 500px) {
+  .task-list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 4dvh 6dvw;
+    padding-right: 11dvw;
+    margin-left: 7dvw;
+  }
+
+  .task-box {
+    width: 100%;
+  }
+
+  .task-box .task-title {
+    font-size: 4dvw;
+    padding: 0 2dvw;
+  }
+
+  .task-box p {
+    font-size: 4dvw;
+    color: #333;
+  }
+
+  .task-box .icon {
+    width: 7dvw;
+    margin-left: 2dvw;
+  }
+  .task-box .edit {
+    width: 6dvw;
+    margin-left: 5dvw;
+  }
+
+  .handleIcon {
+    margin-left: 43dvw;
+  }
+}

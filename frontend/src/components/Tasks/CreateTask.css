@@ -1,0 +1,101 @@
+.create-task {
+  display: flex;
+  flex-direction: column;
+  height: 22dvh;
+  text-align: center;
+  width: 20%;
+  margin-top: 5dvh;
+  padding: 2dvh 3dvw;
+  background-color: rgb(122, 201, 201);
+  border: solid 2px rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.input-wrapper-task {
+  margin-bottom: 10px;
+}
+
+.input-field-task {
+  width: 15%;
+  padding: 5px;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.textarea-field {
+  height: 3dvh;
+  border-radius: 10px;
+  border: solid 2px rgb(250, 250, 250);
+  box-shadow: 5%;
+}
+
+.button-wrapper {
+  margin-top: 10px;
+}
+
+.create-button {
+  background-color: #4259dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.boutons {
+  margin-left: 6dvw;
+  display: flex;
+  flex-direction: row;
+  gap: 1dvw;
+}
+
+.cancel-button {
+  background-color: #4259dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #13178f;
+}
+
+/*//////////  MOBILE /////////*/
+
+@media screen and (max-width: 500px) {
+  .create-task {
+    display: flex;
+    width: 60%;
+    height: 25dvh;
+    margin-left: 7dvw;
+    padding-right: 20dvw;
+  }
+
+  h2 {
+    align-items: center;
+    margin-left: 15dvw;
+    font-size: 4dvw;
+  }
+
+  .input-wrapper-task {
+    text-align: center;
+    margin-left: 15dvw;
+  }
+
+  .input-field-task {
+    width: 20dvw;
+  }
+
+  .boutons {
+    margin-left: 7dvw;
+    display: flex;
+    flex-direction: row;
+    gap: 2dvw;
+  }
+
+  .create-button {
+    margin-left: 13dvw;
+  }
+}
